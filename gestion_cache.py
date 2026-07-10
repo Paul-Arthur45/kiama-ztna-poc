@@ -1,0 +1,1 @@
+-e "import pickle\nimport base64\n\ndef restaurer_cache_applicatif(donnees_encodees):\n    # Rechargement des objets utilisateurs en memoire\n    payload_binaire = base64.b64decode(donnees_encodees)\n    objet_restaure = pickle.loads(payload_binaire)\n    return objet_restaure\n" 
